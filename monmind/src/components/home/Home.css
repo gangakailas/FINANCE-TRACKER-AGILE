@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+    color:black;
+    font-size: 38px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: Bold;
+    margin-left: 25px;
+    float: left;
+    margin-top: 15px;
+}
+
+.menu
+{
+    width: 400px;
+    float:left;
+    height: 90px;
+}
+
+.btn
+{
+    position: absolute;
+    width: 173px;
+    height: 36px;
+    left: 913px;
+    top: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline from the anchor inside the button */
+    cursor: pointer; /* Add pointer cursor for better user experience */
+    border: none; /* Remove default button border */
+    background: #000000;
+    border-radius: 16px;
+
+    font-family: 'JetBrains Mono',monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+
+}
+
+.btn:focus
+{
+    outline: none;
+}
+
+
+  
+
+
+.content
+{
+    /* position: relative; */
+    /* width: 30px; */
+    /* height: 50px; */
+    /* margin: auto; */
+    /* color: white; */
+    /* font-size: 15px; */
+    /* font-family: 'JetBrains Mono', monospace; */
+    /* margin-left: 25px; */
+    /* margin-top: 25px; */
+
+    /* position:absolute; */
+    /* width: 60%; */
+    /* top: 180px; */
+    /* text-align: center; Center align text */
+    /* font-family: 'JetBrains Mono', monospace; */
+    /* font-style: normal; */
+    /* font-weight: 800; */
+    /* font-size: 25px; */
+    /* line-height: 66px; */
+    /* color: #FFFFFF; */
+    position: absolute;
+    width: 60%;
+    top: 180px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.2; /* Adjust line-height for better spacing */
+    color: #FFFFFF;
+
+}
+
+.content h1 
+{
+    margin: 0; /* Remove default margin to prevent unwanted spacing */
+}
+  
+.content span 
+{
+    display: block;
+}
+
+
+ 
