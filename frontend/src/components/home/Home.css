@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+.home-container {
+    background: url('../Assets/homepage.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+
+
+  }
+
+.content h1 {
+    margin: 0; /* Remove default margin to prevent unwanted spacing */
+    text-align: left; /* Align text to the left */
+  }
+
 .logo
 {
     color:black;
@@ -11,17 +25,18 @@
     font-weight: Bold;
     margin-left: 25px;
     float: left;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
+/*
 .menu
 {
     width: 400px;
     float:left;
     height: 90px;
-}
+}*/
 
-.btn
+/*.btn
 {
     position: absolute;
     width: 173px;
@@ -31,9 +46,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Remove underline from the anchor inside the button */
-    cursor: pointer; /* Add pointer cursor for better user experience */
-    border: none; /* Remove default button border */
+    text-decoration: none; 
+    cursor: pointer; 
+    border: none;
     background: #000000;
     border-radius: 16px;
 
@@ -44,14 +59,108 @@
     line-height: 33px;
     color: #FFFFFF;
 
-}
+}*/
 
-.btn:focus
+/*.btn:focus
 {
     outline: none;
+} */
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .menu .cn {
+    position: relative;
+    width: 173px;
+    height: 36px;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background-color: #000000; /* Background color for the button */
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer;
+    margin-left: -5px;
+    margin-top: -24px;
+    margin-right: 40px;
+    transition: color 0.3s, background-color 0.3s; 
+  }
+  
+  .menu .cn::before {
+    content: ''; /* Add a pseudo-element for the background box */
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: calc(100%+10px);/* Set the width of the background box to match the button */
+    height: 100%; /* Set the height of the background box to match the button */
+    background-color: #000000; /* Background color for the box */
+    border-radius: 10px; /* Add curved corners */
+    z-index: -1; /* Ensure the background box is behind the text */
+
 }
 
+  .menu .cn a {
+    position: absolute; /* Position the link relative to its container */
+    top: 50%; /* Move the link vertically to the middle */
+    left: 50%; /* Move the link horizontally to the middle */
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: inherit;
+    margin-left: -7px;
+  }
+  
+  /* Adjust position of SIGN UP button */
+  .menu .signup {
+    position: absolute;
+    left: calc(100% - 913px);
 
+  }
+  
+  /* Adjust position of SIGN IN button */
+  .menu .signin {
+    position: absolute;
+    left: calc(100% - 1175px);
+
+  }
+
+  .menu .cn:hover {
+    color: #000000; /* Change text color to black on hover */
+    background-color: #FFFFFF; /* Change background color to white on hover */
+  }
+  
+  
+  /* Content */
+  .content {
+    position: absolute;
+    width: 60%;
+    top: 180px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #FFFFFF;
+
+
+  }
+  
+  .content h1 {
+    margin: 0;
+    text-align: left;
+
+  }
+  
   
 
 
@@ -87,6 +196,7 @@
     font-size: 25px;
     line-height: 1.2; /* Adjust line-height for better spacing */
     color: #FFFFFF;
+    margin-left: 95px; 
 
 }
 
