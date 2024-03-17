@@ -5,7 +5,7 @@ import './Home.css'
 
 export const Home = () => {
   return (
-    <div className="main"> 
+    <div className="home-container"> 
       <div className="icon">
         <h2 className="logo">MoneyMinder</h2>
       </div>
@@ -16,8 +16,7 @@ export const Home = () => {
       </div>
       
       <div className="content">
-        <h1>Finance Made Easier Than
-          <br/>Ever Before</h1>
+        <h1>Finance Made Easier Than<br/>Ever Before</h1>
       </div>
     </div>
   );
