@@ -4,7 +4,7 @@ import './Signin.css';
 export const Signin = () => {
   return (
     <div className='signin-container'>
-        <div className='Signup-Box'>
+        <div className='Signin-Box'>
             <form action="">
                 <h1>MoneyMinder</h1>
                 <h2>SIGN IN</h2>
