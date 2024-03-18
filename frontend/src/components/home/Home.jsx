@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'
 
 
@@ -12,7 +13,7 @@ export const Home = () => {
 
       <div className="menu">
         <button className="cn"><a href="#">SIGN UP</a></button>
-        <button className="cn"><a href="#">SIGN IN</a></button>
+        <button className="cn"><Link to="Signin">SIGN IN</Link></button>
       </div>
       
       <div className="content">
