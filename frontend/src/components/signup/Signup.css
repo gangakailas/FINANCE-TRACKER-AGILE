@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.signin-container {
+.signup-container {
 
     background: url('../Assets/signpage.png') no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
 
 }
 
-.Signin-Box {
+.Signup-Box {
     background-color: white; /* Set white background */
     padding: 70px; /* Add padding for space around the login contents */
     border-radius: 10px; /* Add border-radius for rounded corners */
@@ -24,14 +24,14 @@
 
 }
 
-.signin-container h1{
+.signup-container h1{
     font-size: 36px;
     font-family: 'JetBrains Mono', monospace;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.signin-container h2{
+.signup-container h2{
     font-size: 36px;
     font-family: 'Inter', sans-serif;
     text-align: Center;
@@ -40,13 +40,12 @@
 
 }
 
-.signin-container .input-box{
+.signup-container .input-box{
     position: relative;
     width: 100%;
-    height:50px;
+    height:40px;
 
     margin: 20px 0;
-
 }
 
 .input-box input{
@@ -64,7 +63,8 @@
 }
 
 .input-box input[type="text"],
-.input-box input[type="password"] {
+.input-box input[type="password"] 
+.input-box input[type="password"]{
     width: calc(100%-40px);
     height: 100%;
     background: white;
@@ -72,7 +72,7 @@
     border-radius: 10px;
     color: black;
     font-size: 15px;
-    padding: 10px 10px;
+    padding: 10px 10px 10px;
     box-sizing: border-box;
 }
 
@@ -82,32 +82,7 @@
 
 }
 
-.signin-container .remember-forgot{
-     
-     display: flex;
-     justify-content: space-between;
-     font-size: 14.5px;
-     margin: -15px 0 15px;
-
-}
-
-.remember-forgot label input{
-    margin-top: 20px;
-    accent-color: white;
-    margin-right: 4px;
-}
-
-.remember-forgot a{
-    margin-top: 19px;
-    color:  #7800FF;
-    text-decoration: none;;
-}
-
-.remember-forgot a:hover{
-    text-decoration: underline;
-}
-
-.signin-container button{
+.signup-container button{
     margin-top: 20px;
     width: 70%;
     height: 45px;
@@ -119,7 +94,9 @@
     cursor: pointer;
     font-size: 16px;
     color: white;
-    font-weight: 700;  
+    font-weight: 700;
+    margin-top: 25px;  
+    margin-bottom: 20px; 
 
 }
 
