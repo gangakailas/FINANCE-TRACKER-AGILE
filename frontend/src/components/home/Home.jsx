@@ -12,7 +12,7 @@ export const Home = () => {
       </div>
 
       <div className="menu">
-        <button className="cn"><a href="#">SIGN UP</a></button>
+        <button className="cn"><Link to="Signup">SIGN UP</Link></button>
         <button className="cn"><Link to="Signin">SIGN IN</Link></button>
       </div>
       

@@ -63,8 +63,8 @@
 }
 
 .input-box input[type="text"],
-.input-box input[type="password"] 
-.input-box input[type="password"]{
+.input-box input[type="password"], 
+.input-box input[type="email"]{
     width: calc(100%-40px);
     height: 100%;
     background: white;
