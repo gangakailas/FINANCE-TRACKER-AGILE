@@ -18,9 +18,9 @@ console.log('Before CORS middleware');
 app.use(cors());
 console.log('After CORS middleware');
 //routes
-readdirSync("./routes").map((route) =>
-  app.use("/api/v1", require("./routes/" + route))
-); 
+// readdirSync("./routes").map((route) =>
+//   app.use("/api/v1", require("./routes/" + route))
+// ); 
 // app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 
