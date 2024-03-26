@@ -8,12 +8,12 @@ export const Home = () => {
   return (
     <div className="home-container"> 
       <div className="icon">
-        <h2 className="logo">MoneyMinder</h2>
+        <h1 className="logo">MoneyMinder</h1>
       </div>
 
       <div className="menu">
-        <button className="cn"><Link to="Signup">SIGN UP</Link></button>
-        <button className="cn"><Link to="Signin">SIGN IN</Link></button>
+        <button className="cn"><Link to="/signup">SIGN UP</Link></button>
+        <button className="cn"><Link to="/signin">SIGN IN</Link></button>
       </div>
       
       <div className="content">
