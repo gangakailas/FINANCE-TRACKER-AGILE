@@ -4,22 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from "./components/home/Home.jsx";
 import { Signin } from './components/signin/Signin';
 import { Signup } from './components/signup/Signup';
-import { Income } from './components/income/Income';
-import { Expense } from './components/expense/Expense';
-import { Transactions } from './components/transactions/Transactions';
-import { Dashboard } from './components/dashboard/Dashboard';
-import styled from "styled-components";
-import { MainLayout } from './styles/Layouts';
-//import PropTypes from 'prop-types';
-
-
-// (Define a new component that uses useLocation)
-const MainContent = () => {
- const [active, setActive] = useState(1);
-// (Now useLocation is defined)
-
-
-
 
 
  return (
