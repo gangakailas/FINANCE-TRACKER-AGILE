@@ -1,0 +1,271 @@
+.in-dashboard {
+  background: url('../Assets/DashboardImage.png') no-repeat;
+  background-size: contain;
+/* Adjusted to ensure it takes up at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  padding-bottom: 800px;
+
+ }
+ 
+  
+  .bar {
+    background-color: #B322FF;
+    max-width: 1440px;
+    height: 70px; 
+    margin: auto;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    
+  }
+  
+  .Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .Header h1 {
+    font-size: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: -5px;
+    margin-top: 25px;/* Adjust margin for spacing */
+    margin-right: 75px;
+    color: black;
+  }
+  
+  .Header-Menu {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 13px;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Align items vertically */
+    flex-grow: 0.65; /* Allow items to grow to fill remaining space */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    padding-left: 60px;
+}
+  
+  .Header-Menu li:not(:last-child) {
+    margin-right: 130px; /* Adjust margin for spacing between menu items */
+  }
+  
+
+  
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .menu-button:hover {
+    text-decoration: none;
+  }
+  
+
+  .register-link {
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .register-link a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    position: absolute;
+    top: 50%; /* Center the icons vertically */
+    transform: translateY(-50%); /* Center the icons vertically */
+  }
+  
+  /* Adjust position of notifications icon */
+  .register-link.notifications .icon {
+    margin-top: 10px;
+    left: 235px; /* Adjust left position */
+  }
+  
+  /* Adjust position of settings icon */
+  .register-link.settings .icon {
+    margin-top: 10px;
+    left: 300px; /* Adjust left position */
+  }
+  
+  /* Adjust position of account icon */
+  .register-link.account .icon {
+    margin-top: 10px;
+    left: 365px; /* Adjust left position */
+  }
+  .dashboard-item .menu-button {
+    color: black;
+}
+
+.Main-box {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Ensure it takes up the full width */
+  padding: 20px; /* Add some padding for spacing */
+ }
+ 
+ .Recent {
+  display: flex;
+  flex-direction: row; /* Stack children horizontally */
+  justify-content: space-around; /* Distribute children evenly */
+  align-items: center; /* Center children vertically */
+  width: 100%; /* Use relative width */
+  max-width: 1500px; /* Maximum width */
+ /* Center the container */
+  padding: 20px; 
+ }
+
+ .Earnings {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color:#BF7DFF;
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  height: 90px; 
+  width: 430px;
+
+}
+
+.Spend {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color:#BF7DFF;
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  height: 90px; 
+  width: 430px;
+}
+
+.Summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color:#BF7DFF;
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  height: 90px; 
+  width: 430px;
+}
+
+.Repres {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 95%; /* Ensure it takes up the full width */
+  height: 68vh;
+  padding: 20px; /* Add some padding for spacing */
+  background-color:transparent;
+  margin-bottom: 35px;
+
+ }
+
+ .left {
+  display: flex;
+  flex-direction: column; /* Stack children horizontally */
+  justify-content: center; /* Distribute children evenly */
+  align-items: center; /* Center children vertically */
+   /* Use relative width */
+ /* Maximum width */
+ /* Center the container */
+  width: 40%;
+  height: 70vh;
+  background-color:transparent;
+  padding: 10px; 
+  margin-right: 0px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  
+ }
+
+ .Bal
+ {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px; 
+  color:black;
+  padding: 30px;
+  border-radius: 10px;
+  background-color:white;
+  height: 190px; 
+  width: 370px;
+  margin-bottom: 20px;
+ }
+
+ .Sum
+ {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px; 
+  color:black;
+  padding: 30px;
+  border-radius: 10px;
+  background-color:white;
+  height: 350px; 
+  width: 370px;
+ }
+
+ 
+ .right {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+ 
+
+
+  width: 100%;
+  height: 70vh;
+  background-color:transparent;
+  padding: 10px; 
+
+  margin-bottom: 20px;
+  margin-right: 200px;
+  
+ } 
+ 
+
+
+ .Graph
+ {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px; 
+  color:black;
+  padding: 30px;
+  border-radius: 10px;
+  background-color:white;
+  height: 700px; 
+  width: 840px;
+ }
+

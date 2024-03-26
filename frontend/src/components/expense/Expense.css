@@ -1,6 +1,6 @@
-.in-income {
+.in-expense {
 
-    background: url('../Assets/incomepage.png') no-repeat;
+    background: url('../Assets/expensepage.png') no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -45,18 +45,16 @@
   }
   
   .Header-Menu {
-
     display: flex;
     list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 0.65;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Align items vertically */
+    flex-grow: 0.65; /* Allow items to grow to fill remaining space */
     margin-top: 20px;
-    /* Adjust styles as needed */
-   }
+}
   
   .Header-Menu li:not(:last-child) {
-    margin-right: 10px; /* Adjust margin for spacing between menu items */
+    margin-right: 30px; /* Adjust margin for spacing between menu items */
   }
   
 
@@ -79,9 +77,8 @@
   .register-link {
     position: relative;
     display: flex;
-    align-items: center;
-    z-index: 10; /* Ensure it's above other elements */
-   }
+    align-items: center; /* Align items vertically */
+  }
   
   .register-link a {
     color: #fff;
@@ -112,11 +109,9 @@
     margin-top: 10px;
     left: 240px; /* Adjust left position */
   }
-  .income-item .menu-button {
+  .expense-item .menu-button {
     color: black;
 }
-
-
 
 .Box {
   position: relative;
@@ -153,7 +148,7 @@
   
  }
 
- .tot-inc
+ .tot-exp
  {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 35px; 
@@ -169,7 +164,7 @@
  }
 
  .Title-box input[type="text"],
- .Income-box input[type="text"],
+ .Expense-box input[type="text"],
  .Purpose-box input[type="text"] 
  {
      width: 90%;
@@ -195,7 +190,7 @@
 
 
 
-.Income-box input::placeholder{
+.Expense-box input::placeholder{
   color: grey;
   font-size: 15px;
 
@@ -232,14 +227,14 @@
 }
 
 .Title-box input[type="text"],
-.Income-box input[type="text"],
+.Expense-box input[type="text"],
 .Purpose-box input[type="text"],
 .Remarks-box input[type="text"] {
   margin-bottom: 5px; /* Add some space below each input */
 }
 
 .Title-box,
-.Income-box,
+.Expense-box,
 .Purpose-box,
 .Remarks-box {
   margin-bottom: 5px; /* Add spacing between container divs */
@@ -282,7 +277,7 @@
   
  }
 
-.in4
+.exp4
 {
   background-color: #D9D9D9;
   color: rgb(130, 121, 121);
@@ -291,7 +286,7 @@
   margin-bottom: 20px;
 }
 
-.in3
+.exp3
 {
   background-color: #D9D9D9;
   color: rgb(130, 121, 121);
@@ -300,7 +295,7 @@
   margin-bottom: 20px;
 }
 
-.in2
+.exp2
 {
   background-color: #D9D9D9;
   color: rgb(130, 121, 121);
@@ -309,7 +304,7 @@
   margin-bottom: 20px;
 }
 
-.in1
+.exp1
 {
   background-color: #D9D9D9;
   color: rgb(130, 121, 121);

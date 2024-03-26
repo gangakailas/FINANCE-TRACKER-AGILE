@@ -1,0 +1,178 @@
+.in-transaction {
+
+    background: url('../Assets/transactions.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    max-width: 1500px; /* Set a maximum width for the container */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bar {
+    background-color: #B322FF;
+    width: 1500px;
+    height: 70px; 
+    margin: auto;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    
+  }
+  
+  .Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .Header h1 {
+    font-size: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: -5px;
+    margin-top: 25px;/* Adjust margin for spacing */
+    margin-right: 75px;
+  }
+  
+  .Header-Menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Align items vertically */
+    flex-grow: 0.65; /* Allow items to grow to fill remaining space */
+    margin-top: 20px;
+}
+  
+  .Header-Menu li:not(:last-child) {
+    margin-right: 30px; /* Adjust margin for spacing between menu items */
+  }
+  
+
+  
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .menu-button:hover {
+    text-decoration: none;
+  }
+  
+
+  .register-link {
+    position: relative;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .register-link a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    position: absolute;
+    top: 50%; /* Center the icons vertically */
+    transform: translateY(-50%); /* Center the icons vertically */
+  }
+  
+  /* Adjust position of notifications icon */
+  .register-link.notifications .icon {
+    margin-top: 10px;
+    left: 100px; /* Adjust left position */
+  }
+  
+  /* Adjust position of settings icon */
+  .register-link.settings .icon {
+    margin-top: 10px;
+    left: 170px; /* Adjust left position */
+  }
+  
+  /* Adjust position of account icon */
+  .register-link.account .icon {
+    margin-top: 10px;
+    left: 240px; /* Adjust left position */
+  }
+  .transaction-item .menu-button {
+    color: black;
+}
+
+.t-Box
+{
+  display: flex;
+  flex-direction: column; /* Stack children horizontally */
+  justify-content: center; /* Distribute children evenly */
+  align-items: center;
+  width: 70%;
+  height: 70vh;
+  background-color:white;
+  padding: 10px;
+  margin-bottom:95px;
+  border-radius: 10px;
+  
+}
+
+.head-t
+{
+ 
+  background-color:white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px; 
+  color:#6E259A;
+  font-weight: bold;
+  margin-bottom:50px;
+  margin-right: 600px;
+
+}
+
+.tr4
+{
+  background-color: #D9D9D9;
+  color: rgb(130, 121, 121);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tr3
+{
+  background-color: #D9D9D9;
+  color: rgb(130, 121, 121);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tr2
+{
+  background-color: #D9D9D9;
+  color: rgb(130, 121, 121);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tr1
+{
+  background-color: #D9D9D9;
+  color: rgb(130, 121, 121);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}

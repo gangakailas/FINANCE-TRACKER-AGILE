@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import './Signin.css';
 
 export const Signin = () => {
@@ -22,7 +22,7 @@ export const Signin = () => {
 
                 <button type="submit">SIGN IN</button>
                 <div className='register-link'>
-                    <p>Don't have an account?<a href="#">SignUp</a></p>
+                    <p>Don&apos;t have an account?<a href="#">SignUp</a></p>
 
                 </div>
 
