@@ -67,7 +67,8 @@
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     cursor: pointer;
-  }
+    text-decoration: none; /* Add this line to remove the underline */
+}
   
   .emenu-button:hover {
     text-decoration: none;

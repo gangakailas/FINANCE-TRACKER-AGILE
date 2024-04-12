@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 //import React from 'react'
 import './Income.css';
 //import { GrNotification } from "react-icons/gr";
@@ -16,10 +17,15 @@ export const Income = () => {
           <h1>MoneyMinder</h1>
           
           <ul className='iHeader-Menu'>
-            <li><button className="imenu-button">DASHBOARD</button></li>
+          <li><Link to="/dashboard" className="imenu-button">DASHBOARD</Link></li>
+
             <li className="inc-item" ><button className="imenu-button">INCOME</button></li>
-            <li ><button className="imenu-button">EXPENSE</button></li>
-            <li><button className="imenu-button">TRANSACTIONS</button></li>
+            <li className={location.pathname === '/expense' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/expense" className="emenu-button">EXPENSE</Link>
+            </li>
+            <li className={location.pathname === '/transaction' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/transaction" className="tmenu-button">TRANSACTIONS</Link>
+            </li>
           </ul>
           
           <div className='iregister-link notifications'>
