@@ -1,26 +1,32 @@
-//import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
 import './Dashboard.css';
-//import { GrNotification } from "react-icons/gr";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
 
-
 export const Dashboard = () => {
+ const location = useLocation();
 
-
-  return (
+ return (
     <div className='in-dash'>
       <div className='dash-bar'>
         <div className='dash-Header'>
           <h1>MoneyMinder</h1>
           
           <ul className='dHeader-Menu'>
-            <li className="dash-item"><button className="dmenu-button">DASHBOARD</button></li>
-            <li ><button className="dmenu-button">INCOME</button></li>
-            <li ><button className="dmenu-button">EXPENSE</button></li>
-            <li><button className="dmenu-button">TRANSACTIONS</button></li>
-          </ul>
+            <li className={location.pathname === '/dashboard' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/dashboard" className="dmenu-button">DASHBOARD</Link>
+            </li>
+            <li className={location.pathname === '/income' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/income" className="imenu-button">INCOME</Link>
+            </li>
+            <li className={location.pathname === '/expense' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/expense" className="emenu-button">EXPENSE</Link>
+            </li>
+            <li className={location.pathname === '/transaction' ? 'dash-item active' : 'dash-item'}>
+              <Link to="/transaction" className="tmenu-button">TRANSACTIONS</Link>
+            </li>
+        </ul>
           
           <div className='dregister-link notifications'>
             <a href="#"><IoNotificationsOutline className="icon" /></a>
@@ -61,11 +67,8 @@ export const Dashboard = () => {
           <div className='Graph'>
             <p>Outcome Visualizing Graph</p>
           </div>
-              
         </div>
       </div>
-
-
     </div>
-  )
+ )
 }

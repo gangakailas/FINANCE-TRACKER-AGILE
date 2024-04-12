@@ -112,6 +112,17 @@
   .dash-item .dmenu-button {
     color: black;
 }
+.dHeader-Menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Active state for the "DASHBOARD" button */
+.dash-item.active a {
+  color: black;
+  font-weight: bold;
+}
 
 .Main-box {
   display: flex;
