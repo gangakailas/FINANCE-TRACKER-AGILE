@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import { useToast } from "@chakra-ui/react";
 import axios from "axios";
@@ -11,6 +11,7 @@ export const Signup = () => {
   const toast = useToast();
   // eslint-disable-next-line no-unused-vars
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const submitHandler = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
@@ -47,6 +48,7 @@ export const Signup = () => {
         position: "bottom",
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
+      navigate("/dashboard");
     } catch (error) {
       toast({
         title: "Error Occured!",

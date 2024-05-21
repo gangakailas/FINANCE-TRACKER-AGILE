@@ -17,54 +17,16 @@
     text-align: left; /* Align text to the left */
   }
 
-.logo
-{
-    color:black;
-    font-size: 45px;
+.logo {
+    color: black;
+    font-size: 60px;
     font-family: 'JetBrains Mono', monospace;
     font-weight: Bold;
-    margin-left: 25px;
+    margin-left: 100px;
     float: left;
-    margin-top: -390px;
+    margin-top: -325px;
 }
 
-/*
-.menu
-{
-    width: 400px;
-    float:left;
-    height: 90px;
-}*/
-
-/*.btn
-{
-    position: absolute;
-    width: 173px;
-    height: 36px;
-    left: 913px;
-    top: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none; 
-    cursor: pointer; 
-    border: none;
-    background: #000000;
-    border-radius: 16px;
-
-    font-family: 'JetBrains Mono',monospace;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 33px;
-    color: #FFFFFF;
-
-}*/
-
-/*.btn:focus
-{
-    outline: none;
-} */
 
 /* Menu */
 .menu {
@@ -110,9 +72,9 @@
 }
 
   .menu .cn a {
-    position: absolute; /* Position the link relative to its container */
-    top: 50%; /* Move the link vertically to the middle */
-    left: 50%; /* Move the link horizontally to the middle */
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: inherit;
@@ -134,8 +96,8 @@
   }
 
   .menu .cn:hover {
-    color: #000000; /* Change text color to black on hover */
-    background-color: #FFFFFF; /* Change background color to white on hover */
+    color: #000000; 
+    background-color: #FFFFFF; 
   }
   
   
@@ -161,31 +123,8 @@
 
   }
   
-  
-
-
 .content
 {
-    /* position: relative; */
-    /* width: 30px; */
-    /* height: 50px; */
-    /* margin: auto; */
-    /* color: white; */
-    /* font-size: 15px; */
-    /* font-family: 'JetBrains Mono', monospace; */
-    /* margin-left: 25px; */
-    /* margin-top: 25px; */
-
-    /* position:absolute; */
-    /* width: 60%; */
-    /* top: 180px; */
-    /* text-align: center; Center align text */
-    /* font-family: 'JetBrains Mono', monospace; */
-    /* font-style: normal; */
-    /* font-weight: 800; */
-    /* font-size: 25px; */
-    /* line-height: 66px; */
-    /* color: #FFFFFF; */
     position: absolute;
     width: 60%;
     top: 180px;

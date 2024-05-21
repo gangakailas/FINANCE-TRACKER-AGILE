@@ -58,7 +58,7 @@ export const Signin = () => {
        setUser(data);
        localStorage.setItem("userInfo", JSON.stringify(data));
        setIsLoading(false);
-       navigate("/");
+       navigate("/dashboard");
     } catch (error) {
        // Improved error handling
        if (error.response) {

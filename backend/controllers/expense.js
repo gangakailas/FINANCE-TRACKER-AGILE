@@ -1,50 +1,95 @@
-const ExpenseSchema = require("../models/ExpenseModel")
+const ExpenseSchema = require("../models/ExpenseModel");
 
-exports.addExpense = async (req, res) =>{
-    const {title, amount, category, description, date} = req.body
+exports.addExpense = async (req, res) => {
+  const { title, amount, purpose, remarks, type = 'expense' } = req.body;
+  const expense = new ExpenseSchema({ title, amount, purpose, remarks, type });
 
-    const income = ExpenseSchema({
-        title,
-        amount,
-        category,
-        description,
-        date
+  try {
+    if (!title || !purpose || !remarks) {
+      return res.status(400).json({ message: 'All fields are required!' });
+    }
+
+    if (amount <= 0 || isNaN(amount)) {
+      return res.status(400).json({ message: 'Amount must be a positive number!' });
+    }
+
+    await expense.save();
+    res.status(200).json({ message: 'Expense Added' });
+  } catch (error) {
+    console.error('Error adding expense:', error);
+    res.status(500).json({ message: 'Server Error' });
+  }
+};
+
+exports.getExpense = async (req, res) => {
+  try {
+    const expenses = await ExpenseSchema.find().sort({ createdAt: -1 });
+    res.status(200).json(expenses);
+  } catch (error) {
+    console.error('Error getting expenses:', error);
+    res.status(500).json({ message: 'Server Error' });
+  }
+};
+
+exports.deleteExpense = async (req, res) => {
+  const { id } = req.params;
+  ExpenseSchema.findByIdAndDelete(id)
+    .then((expense) => {
+      res.status(200).json({ message: 'Expense Deleted' });
     })
+    .catch((err) => {
+      console.error('Error deleting expense:', err);
+      res.status(500).json({ message: 'Server Error' });
+    });
+};
 
-    try {
+// const ExpenseSchema = require("../models/ExpenseModel")
 
-        if(!title || !category || !description || !date){
-            return res.status(400).json({message: 'All fields are required!'})
-        }
-        if(amount <= 0 || !amount == 'number'){
-            return res.status(400).json({message: 'Amount must be positive!'})
-        }
-        await income.save()
-        res.status(200).json({message: 'Expense Added'})
+// exports.addExpense = async (req, res) =>{
+//     const {title, amount, category, description, date} = req.body
+
+//     const income = ExpenseSchema({
+//         title,
+//         amount,
+//         category,
+//         description,
+//         date
+//     })
+
+//     try {
+
+//         if(!title || !category || !description || !date){
+//             return res.status(400).json({message: 'All fields are required!'})
+//         }
+//         if(amount <= 0 || !amount == 'number'){
+//             return res.status(400).json({message: 'Amount must be positive!'})
+//         }
+//         await income.save()
+//         res.status(200).json({message: 'Expense Added'})
         
-    } catch (error) {
-        res.status(500).json({message: 'Server Error'})
-    }
+//     } catch (error) {
+//         res.status(500).json({message: 'Server Error'})
+//     }
 
-    console.log(income)
-}
+//     console.log(income)
+// }
 
-exports.getExpense = async (req, res) =>{
-    try {
-        const incomes = await ExpenseSchema.find().sort({createdAt: -1})
-        res.status(200).json(incomes)
-    } catch (error) {
-        res.status(500).json({message: 'Server Error'})
-    }
-}
+// exports.getExpense = async (req, res) =>{
+//     try {
+//         const incomes = await ExpenseSchema.find().sort({createdAt: -1})
+//         res.status(200).json(incomes)
+//     } catch (error) {
+//         res.status(500).json({message: 'Server Error'})
+//     }
+// }
 
-exports.deleteExpense = async (req, res) =>{
-    const {id} =req.params;
-    ExpenseSchema.findByIdAndDelete(id)
-        .then((income)=>{
-            res.status(200).json({message: 'Expense Deleted'})
-        })
-        .catch((err)=>{
-            res.status(500).json({message: 'Server Error'})
-        })
-}
+// exports.deleteExpense = async (req, res) =>{
+//     const {id} =req.params;
+//     ExpenseSchema.findByIdAndDelete(id)
+//         .then((income)=>{
+//             res.status(200).json({message: 'Expense Deleted'})
+//         })
+//         .catch((err)=>{
+//             res.status(500).json({message: 'Server Error'})
+//         })
+// }
